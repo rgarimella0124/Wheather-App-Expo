@@ -30,7 +30,7 @@ const AppStack = createStackNavigator(
       screen: Details,
       navigationOptions: ({ navigation }) => ({
         headerTitle: navigation.getParam("title", ""),
-        headerRight: (
+        headerRight: () => (
           <React.Fragment>
             <StatusBar barStyle="light-content" />
             <HeaderRightButton
@@ -50,7 +50,7 @@ const AppStack = createStackNavigator(
       screen: Search,
       navigationOptions: ({ navigation }) => ({
         headerTitle: "Search",
-        headerRight: (
+        headerRight: () => (
           <React.Fragment>
             <StatusBar barStyle="dark-content" />
             <HeaderRightButton
